@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Buat Artikel | Plastic World</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote-bs4.min.css" rel="stylesheet">
+
+
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote-bs4.min.js"></script>
+
+  </head>
+
+
+  <body> 
+
+   
+
+  <!--  AWAL NAV  -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="beranda.html"><img src="img/logo.png" width="55px" alt="logo-pw"></a>      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="beranda.html">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="komunitas.html">Komunitas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="umkm.html">UMKM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="event.html">Event</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="artikel.html">Artikel</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/profpic.jpg" class="img-circle" width="25px" alt="img-profile"></a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <!-- <a class="dropdown-item" href="profile-komunitas.html"><i class="fas fa-user mr-3"></i>Profile</a>
+              <div class="dropdown-divider"></div> -->
+              <a class="dropdown-item" href="edit-profile-komunitas.html"><i class="fas fa-user-edit mr-3"></i>Edit Profile</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="komunitas-dashboard.html"><i class="fas fa-cogs mr-3"></i>Kelola</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt mr-3"></i>Keluar</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- DATA KOMUNITAS -->
+
+  <section class="daftar fdb-block pl-40" id="daftar">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card shadow">
+            <div class="row">
+              <div class="col-lg-12 pd-20">
+                <h1>Tambah artikel</h1>
+                <hr>
+
+              <form action="" method="post" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-lg-4">
+                      <div class="wrapper-kelas rounded logo-center white-bg">
+                        <img src="img/profpic.jpg" class="img-fluid" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg4">
+                      <input type="file" title="Change Avatar" data-filename-placement="inside" id="upload_image" accept="image/*">
+                    </div>
+                  </div>
+
+
+                  <div class="form-group mg-sm-top">
+                    <label for="judul-artikel">Judul Artikel</label>
+                      <input type="text" name="judul-artikel" class="form-control" id="judul-artikel" placeholder="judul-artikel" value="Pentingnya Mengelola Sampah Plastik">
+                  </div>
+                 
+                    <label for="isi-artikel">Isi artikel</label>
+                    <div id="summernote"></div>
+          
+                  <div class="form-group">
+                    <label for="email">Author</label>
+                    <select name="komunitas" id="komunitas" class="form-control">
+                      <option value="komunitas">Pilih Komunitas</option>
+                      <option value="Exo-L Peduli">Exo-L Peduli</option>
+                      <option value="Tastura">Earth Hour</option>
+                      <option value="Yuk Ngaji">Yuk Ngaji</option>
+                    </select>
+                  </div>
+                  <button type="submit" name="submit" id="submit" class="btn btn-edit wid">Publikasi</button>
+
+              </form> 
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="foot">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h4>PLASTIC WORLD</h4>
+            <p>Website yang memudahkan proses pengolahan sampah plastik di Lombok NTB</p>
+          </div>
+          <div class="col-lg-4 ">
+            <h4>Menu PLASTIC WORLD</h4>
+            <div class="hov">
+            <ul>
+                <li><a href="about-us.html">Tentang Kami</a></li>
+                <li><a href="komunitas.html">Komunitas</a></li>
+                <li><a href="umkm.html">UMKM</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="artikel.html">Artikel</a></li>
+            </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h4>HUBUNGI KAMI</h4>
+            <p>423, Apgujong-ro, Gangnam gu, Seoul</p>
+            <p>(021) 098 082</p>
+            <p>contact@plasticworld.com</p>
+            <a href="www.facebook.com" class="fa fa-facebook mr-3 fa-3x"></a>
+            <a href="www.twiter.com" class="fa fa-twitter mr-3 fa-3x"></a>
+            <a href="www.instagram.com" class="fa fa-instagram mr-3 fa-3x"></a>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col">
+            <p>copyright © 2020 - Plastic World. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+    <script>
+      $('#summernote').summernote({
+        placeholder: 'Hello Bootstrap 4',
+        tabsize: 2,
+        height: 100
+      });
+    </script>
+
+
+<script src="https://kit.fontawesome.com/dd98c3032a.js" crossorigin="anonymous"></script>
+  
+    
+  </body>
+</html>

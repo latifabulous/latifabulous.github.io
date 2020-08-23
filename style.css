@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+.center {
+  margin: 0 auto;
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 2000px;
+}
+header {
+  display: inline;
+}
+.logo {
+  float: left;
+  display: block;
+  font-size: 20px;
+  padding-top: 2px;
+}
+.main-nav {
+  background-color: #ffffff;
+  padding: 9px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  text-align: right;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.main-nav a {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1;
+  color: #000;
+}
+.main-nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 25px;
+}
+
+.main-nav .nav-link:hover {
+/*  background: #008080;
+*/
+  font-weight: 600;
+/*  padding: 5px;*/
+}
+
+.main-nav .btn-out {
+/*  display: inline-block;*/
+  background: #066;
+  border-radius: 5px;
+  padding: 7px;
+/*  height: 2em;
+  width: 5em;
+*/  color: #fff;
+  margin-right: -2px;
+}
+
+.main-nav .btn-out:hover {
+  background: #004c4c !important; 
+  font-weight: 200 !important;
+}
+
+.btn {
+  border-radius: 5px;
+}
+
+.btn-out a {
+  color: white;
+}
+
+.main-nav .btn-in {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 6px;
+  margin-right: -1px;
+}
+
+.btn-in:hover
+{
+  color:#fff;
+  background-color: #e3e3e3 !important;
+  font-weight: 200 !important;
+}
+
+#penanda {
+  border-bottom: 3px solid rgba(0,0,0,0.2);
+  padding-bottom: 3px;
+}
